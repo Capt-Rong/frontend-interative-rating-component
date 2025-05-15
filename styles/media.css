@@ -1,0 +1,100 @@
+/* tablet */
+@media (min-width: 768px) {
+  .rating__form {
+    width: 412px;
+    height: 416px;
+  }
+}
+
+/* mobile */
+@media (max-width: 375px) {
+  .rating__form {
+    width: 327px;
+    height: 360px;
+    border-radius: 15px;
+  }
+  .rating__form-container {
+    width: 279px;
+    height: 303px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-300, 24px);
+  }
+
+  .rating__title {
+    /* Text Preset 2 - Overpass Bold - 24px - 30px Line Height - 0px Line Spacing */
+    font-family: Overpass;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+
+  .rating__description {
+    /* Text Preset 5 (Regular) - Overpass Regular - 14px - 22px Line Height - 0px Line Spacing */
+    font-family: Overpass;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .rating__options-container {
+    width: 100%;
+    gap: var(--spacing-200, 16px);
+  }
+
+  .rating__option {
+    width: 42px;
+    height: 42px;
+    padding: var(--spacing-100, 8px) var(--spacing-200, 16px);
+    gap: var(--spacing-100, 8px);
+  }
+
+  .rating__option__text {
+    /* Text Preset 5 (Bold) - Overpass Bold - 14px - 18px Line Height - 1.87px Line Spacing */
+    font-family: Overpass;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 1.87px;
+  }
+
+  /* feedback */
+  .rating__feedback-section {
+    width: 327px;
+    height: 360px;
+    padding: var(--spacing-400, 32px) var(--spacing-300, 24px);
+    gap: var(--spacing-100, 8px);
+  }
+  .rating__feedback-container {
+    width: 279px;
+    height: 288px;
+  }
+  .rating__feedback-result {
+    /* Text Preset 5 (Regular) - Overpass Regular - 14px - 22px Line Height - 0px Line Spacing */
+    font-family: Overpass;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .feedback__title {
+    /* Text Preset 2 - Overpass Bold - 24px - 30px Line Height - 0px Line Spacing */
+    font-family: Overpass;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+
+  .feedback__message {
+    font-family: Overpass;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+}

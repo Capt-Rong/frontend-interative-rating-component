@@ -1,0 +1,262 @@
+body {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-grey-950);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.rating__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background: var(
+    --colors-gradient-1,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+
+.rating__form-container {
+  display: flex;
+  width: 351px;
+  height: 347px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-400, 32px);
+}
+
+.rating__icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: var(--spacing-200, 16px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  border-radius: 24px;
+  background: var(--colors-grey-900, #262e38);
+}
+
+.rating__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+}
+
+.rating__title {
+  width: 100%;
+  color: var(--colors-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 1 - Overpass Bold - 28px - 35px Line Height - 0px Line Spacing */
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 125% */
+}
+
+.rating__description {
+  color: var(--colors-grey-500, #969fad);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 4 (Regular) - Overpass Regular - 15px - 24px Line Height - 0px Line Spacing */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.rating__options-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-300, 24px);
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.rating__option {
+  display: flex;
+  width: 51px;
+  height: 51px;
+  padding: var(--spacing-200, 16px) var(--spacing-300, 24px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  border-radius: 25.5px;
+  background: var(--colors-grey-900, #262e38);
+  cursor: pointer;
+}
+
+.rating__rating-button {
+  display: none;
+}
+
+.rating__option span {
+  color: var(--colors-grey-500, #969fad);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 3 - Overpass Bold - 16px - 24px Line Height - 0.2px Line Spacing */
+  font-family: Overpass;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.rating__option:hover {
+  background: var(--colors-orange-500, #fc7614);
+}
+
+.rating__option:hover span {
+  color: var(--colors-black, #000);
+}
+
+.rating__option--active {
+  background: var(--colors-white, #fff);
+}
+
+.rating__option--active span {
+  color: var(--colors-black, #000);
+}
+
+.rating__submit {
+  display: flex;
+  height: 45px;
+  padding: 6px var(--spacing-1700, 136px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+  border-radius: 22.5px;
+  background: var(--colors-orange-500, #fc7614);
+}
+
+.rating__submit:hover {
+  background: var(--colors-orange-500, #fc7614);
+}
+
+.rating__submit:hover span {
+  color: var(--colors-black, #000);
+}
+
+.rating__submit--active {
+  background: var(--colors-white, #fff);
+}
+
+.rating__submit--active span {
+  color: var(--colors-black, #000);
+}
+
+/* ------------------------------ Feedback Section ------------------------------ */
+
+.rating__feedback-section {
+  display: none;
+  width: 412px;
+  height: 416px;
+  padding: var(--spacing-500, 40px) var(--spacing-400, 32px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(
+    --colors-gradient-1,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+
+.rating__feedback-container {
+  display: flex;
+  width: 340px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-400, 32px);
+}
+
+.rating__feedback-result {
+  display: flex;
+  width: 193px;
+  height: 32px;
+  padding: var(--spacing-0, 0px) var(--spacing-200, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  border-radius: 22.5px;
+  background: var(--colors-grey-900, #262e38);
+}
+
+.rating__feedback-result-text {
+  width: 154px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--colors-orange-500, #fc7614);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 4 (Regular) - Overpass Regular - 15px - 24px Line Height - 0px Line Spacing */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.rating__feedback-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+}
+
+.rating__feedback-title {
+  color: var(--colors-white, #fff);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 1 - Overpass Bold - 28px - 35px Line Height - 0px Line Spacing */
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 125% */
+}
+
+.rating__feedback-message {
+  color: var(--colors-grey-500, #969fad);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 4 (Regular) - Overpass Regular - 15px - 24px Line Height - 0px Line Spacing */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}

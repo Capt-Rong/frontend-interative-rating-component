@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* White and Black */
+  --color-white: #ffffff;
+  --color-black: #000;
+
+  /* Grey */
+  --color-grey-950: #131518;
+  --color-grey-900: #262e38;
+  --color-grey-500: #969fad;
+
+  /* Orange */
+  --color-orange-500: #fc7614;
+
+  /* Gradient */
+  --color-gradient-start: #232a34;
+  --color-gradient-end: #181e27;
+}
+
+/** Spacing Variables */
+:root {
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-1300: 104px;
+  --spacing-1700: 136px;
+}
+
+/* Typography */
+.text-preset-1 {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+/** Text Preset 4 (Bold) */
+.text-preset-4-bold {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+/** Text Preset 4 (Regular) */
+.text-preset-4-regular {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+/** Text Preset 5 (Bold) */
+.text-preset-5-bold {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.87px;
+}
+
+/** Text Preset 5 (SemiBold) */
+.text-preset-5-semibold {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.17px;
+}
+
+/** Text Preset 5 (Regular) */
+.text-preset-5-regular {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
